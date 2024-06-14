@@ -6,13 +6,23 @@ authors = ["Tess Ferrandez <tferrand@microsoft.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
-ipykernel = "^6.29.4"
-nbconvert = "^7.16.4"
-
+python = "3.12.3"
+chainlit = "^1.1.300"
+langchain = "^0.2.4"
+langchain-community = "^0.2.4"
+langchain-openai = "^0.1.8"
+langchain-chroma = "^0.1.1"
+python-dotenv = "^1.0.1"
+ragas = "^0.1.9"
+bs4 = "^0.0.2"
+lark = "^1.1.9"
+numexpr = "^2.10.0"
+azure-search-documents = "^11.4.0"
+azure-identity = "^1.16.1"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.4"
+nbconvert = "^7.16.4"
 
 [build-system]
 requires = ["poetry-core"]
