@@ -16,7 +16,7 @@ class DrRagilicious(Persona):
         message_history = ChatMessageHistory()
         conversation_buffer_memory = ConversationBufferMemory(memory_key="chat_history", output_key="answer", chat_memory=message_history, return_messages=True)
 
-        db = AzureSearch(azure_search_endpoint=os.getenv("AZURE_SEARCH_ENDPOINT"), azure_search_key=os.getenv("AZURE_SEARCH_KEY"), index_name="ef_docs", embedding_function=embedding.embed_query,)
+        db = AzureSearch(azure_search_endpoint=os.getenv("AZURE_SEARCH_ENDPOINT"), azure_search_key=os.getenv("AZURE_SEARCH_KEY"), index_name="engineering_fundamentals", embedding_function=embedding.embed_query,)
         self.chain = ConversationalRetrievalChain.from_llm(
             llm=llm,
             chain_type="stuff",
