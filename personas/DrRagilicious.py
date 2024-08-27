@@ -39,11 +39,11 @@ class DrRagilicious(Persona):
                 source_name = path
                 text_elements.append(cl.Text(content=source_doc.page_content, name=source_name))
 
-            source_names = [text_element.name for text_element in text_elements]
+            # source_names = [text_element.name for text_element in text_elements]
 
-            if source_names:
-                answer += f"\nSources: {', '.join(source_names)}"
-            else:
-                answer += "\nNo sources found."
+            # if source_names:
+            #     answer += f"\n\n\nSources: {'\n- ' + '\n- '.join(source_names)}"
+            # else:
+            #     answer += "\n\n\nNo sources found."
 
         await cl.Message(content=answer, elements=text_elements).send()
