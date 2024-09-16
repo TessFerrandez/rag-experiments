@@ -15,14 +15,10 @@
             // Specify extensions to be installed in the dev container
             "extensions": [
                 "ms-azuretools.azure-dev",
-                "ms-azuretools.vscode-azurefunctions",
-                "ms-azuretools.vscode-bicep",
                 "ms-azuretools.vscode-docker",
                 "ms-python.python",
                 "charliermarsh.ruff",
-                "ms-toolsai.jupyter",
-                "ritwickdey.LiveServer",
-                "humao.rest-client"
+                "ms-toolsai.jupyter"
             ]
         }
     },
